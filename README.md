@@ -26,6 +26,9 @@ A simple **Flask + SQLite** based web application that allows users to input sym
 └── requirements.txt # Dependencies
 
 ## Screenshots:
+![image_1](screenshots/image_1.png)
+
+![image_2](screenshots/image_2.png)
 
 ## Future Improvements
 -> Add login system for doctors/patients
