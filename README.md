@@ -2,6 +2,9 @@
 
 A simple **Flask + SQLite** based web application that allows users to input symptoms and get **probable conditions** and **recommended steps** (for **educational purposes only**).
 
+# Demo Video
+- https://drive.google.com/file/d/1zkKk6PYjwxstowWkvrLpAPH53FYVjRoP/view?usp=sharing
+
 # Features
 
 **Symptom Checker:**  
