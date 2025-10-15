@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Healthcare Symptom Checker</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <h1> Healthcare Symptom Checker</h1>
+    <p>Educational purposes only – not medical advice.</p>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2>Enter Your Symptoms</h2>
+      <form action="/check" method="POST">
+        <textarea name="symptoms" placeholder="e.g. fever, cough, tiredness" required></textarea>
+        <button type="submit">Check</button>
+      </form>
+      <p><a href="/history">View Past Checks →</a></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 HealthEdu Systems | All rights reserved.</p>
+  </footer>
+</body>
+</html>

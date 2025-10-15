@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Result - Symptom Checker</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header><h1>🩺 Symptom Analysis Result</h1></header>
+
+  <main>
+    <div class="container">
+      <h3>Your Symptoms:</h3>
+      <p>{{ symptoms }}</p>
+
+      <h3>Possible Condition:</h3>
+      <p><strong>{{ condition }}</strong></p>
+
+      <h3>Recommended Steps:</h3>
+      <p>{{ advice }}</p>
+
+      {% if info %}
+      <hr>
+      <h3>About {{ condition }}</h3>
+      <p><b>Description:</b> {{ info.description }}</p>
+      <p><b>Common Symptoms:</b> {{ ", ".join(info.symptoms) }}</p>
+      <p><b>Prevention:</b> {{ info.prevention }}</p>
+      {% endif %}
+
+      <a href="/">← Check Again</a>
+    </div>
+  </main>
+</body>
+</html>

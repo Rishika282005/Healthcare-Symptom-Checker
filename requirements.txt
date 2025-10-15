@@ -1,0 +1,7 @@
+Type this in Command Prompt:
+
+pip install -r requirements.txt
+
+pip install flask flask_sqlalchemy
+
+python app.py

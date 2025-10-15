@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>History - Healthcare Checker</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header><h1> Past Symptom Checks</h1></header>
+
+  <main>
+    <div class="container">
+      {% for r in records %}
+        <div class="record">
+          <p><b>Symptoms:</b> {{ r.symptoms }}</p>
+          <p><b>Condition:</b> {{ r.conditions }}</p>
+          <p><b>Recommendation:</b> {{ r.recommendations }}</p>
+          <hr>
+        </div>
+      {% else %}
+        <p>No past checks yet.</p>
+      {% endfor %}
+      <a href="/">← Back to Home</a>
+    </div>
+  </main>
+</body>
+</html>
